@@ -1,0 +1,39 @@
+#pragma once
+
+//                                                                GENERAL CONFIG
+////////////////////////////////////////////////////////////////////////////////
+
+#define SCREEN_W 960
+#define SCREEN_H 540
+
+#define IMG_W 350
+
+#define WIFI_SSID     "YOUR WIFI SSID"
+#define WIFI_PASSWORD "YOUR WIFI PASS"
+
+#define NTP_SERVER_1 "time.cloudflare.com"
+#define NTP_SERVER_2 "time.google.com"
+#define TIME_ZONE    "CEST"
+
+#define ANNIVERSARY_YEAR 2001
+#define ANNIVERSARY_MONTH  01
+#define ANNIVERSARY_DAY    01
+#define ANNIVERSARY_HOUR   01
+#define ANNIVERSARY_MIN    01
+
+//                                                                        ARRAYS
+////////////////////////////////////////////////////////////////////////////////
+
+#include <array>
+
+const std::array<const char*, 2> phrases = {
+    "example phrase",
+    "another one",
+};
+
+#include "../img/img0.h"
+#include "../img/img1.h"
+std::array<uint8_t*, 2> images = {
+    (uint8_t*)img0_data,
+    (uint8_t*)img1_data,
+};

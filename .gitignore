@@ -1,0 +1,6 @@
+.pio
+src/config.hpp
+img/*.h
+img/*.hpp
+font/*.h
+font/*.hpp
